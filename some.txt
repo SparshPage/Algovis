@@ -1,0 +1,32 @@
+1) create a button
+2) onclick call oncliclk set a bool variable to true
+3) in draw:
+    if true :
+        doAstar();
+        showGrid();
+
+
+selct start and end node
+onMouseclick(){
+    for(i = 0; i< rows; i++){
+        for(j = 0; j<cols; j++){
+            g = grid[i][j];
+            if(mouse.x > g.x && mouse.x < g.x + w && mouse.y < ...){
+                grid[i][j].isSelected = !grid[i][j].isSelected;
+            }
+        }
+    }
+}
+
+
+
+draw(){
+for(i = 0; i< rows; i++){
+        for(j = 0; j<cols; j++){
+            if(grid[i][j].isSelected){
+                grid[i][j].show('blue');
+            }
+        }
+}
+    
+}
